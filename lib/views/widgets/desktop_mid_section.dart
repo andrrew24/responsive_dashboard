@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:responsive_dashboard/models/expenses_item_model.dart';
-import 'package:responsive_dashboard/views/widgets/active_expenses_item.dart';
 import 'package:responsive_dashboard/views/widgets/allexepensesheader.dart';
-import 'package:responsive_dashboard/views/widgets/inactive_expenses_item.dart';
+import 'package:responsive_dashboard/views/widgets/allexpenses_row.dart';
 
 class DesktopMidSection extends StatelessWidget {
   const DesktopMidSection({
@@ -22,26 +20,11 @@ class DesktopMidSection extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(20),
               decoration: const BoxDecoration(color: Colors.white),
-              child: Column(
+              child: const Column(
                 children: [
-                  const AllExpensesHeader(),
-                  const Gap(16),
-                  Row(
-                      children: expensesItemsList.asMap().entries.map((e) {
-                    int index = e.key;
-                    var item = e.value;
-
-                    if (index == 1) {
-                      return Expanded(
-                          child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 12),
-                        child: ActiveEpensesItem(expensesItemModel: item),
-                      ));
-                    } else {
-                      return Expanded(
-                          child: InActiveEpensesItem(expensesItemModel: item));
-                    }
-                  }).toList()),
+                  AllExpensesHeader(),
+                  Gap(16),
+                  AllExpensesRow(),
                 ],
               ),
             )

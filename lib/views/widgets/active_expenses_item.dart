@@ -5,7 +5,10 @@ import 'package:responsive_dashboard/utils/app_styles.dart';
 import 'package:responsive_dashboard/views/widgets/expenses_item_header.dart';
 
 class ActiveEpensesItem extends StatelessWidget {
-  const ActiveEpensesItem({super.key, required this.expensesItemModel});
+  const ActiveEpensesItem({
+    super.key,
+    required this.expensesItemModel,
+  });
 
   final ExpensesItemModel expensesItemModel;
 
