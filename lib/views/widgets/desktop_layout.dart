@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/views/widgets/custom_drawer.dart';
 import 'package:responsive_dashboard/views/widgets/desktop_mid_section.dart';
+import 'package:responsive_dashboard/views/widgets/deskyop_trailsectio.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -13,17 +14,22 @@ class DesktopLayout extends StatelessWidget {
         child: Row(
           children: [
             const Expanded(
-              flex: 3,
+              flex: 1,
               child: CustomDrawer(),
             ),
             const Expanded(
-              flex: 5,
+              flex: 2,
               child: DesktopMidSection(),
             ),
             Expanded(
-              flex: 3,
+              flex: 1,
               child: Container(
-                decoration: const BoxDecoration(color: Colors.red),
+                decoration: ShapeDecoration(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+                child: DesktopTrailSection(),
               ),
             ),
           ],

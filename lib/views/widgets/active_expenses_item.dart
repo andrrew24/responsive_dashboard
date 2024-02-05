@@ -31,7 +31,7 @@ class ActiveEpensesItem extends StatelessWidget {
             imageColor: Colors.white,
             iconColor: Colors.white,
           ),
-          const Gap(34),
+          const Gap(15),
           Text(
             expensesItemModel.title,
             style:
@@ -43,7 +43,7 @@ class ActiveEpensesItem extends StatelessWidget {
             style:
                 AppStyles.styleRegular14(context).copyWith(color: Colors.white),
           ),
-          const Gap(16),
+          const Gap(8),
           Text(
             expensesItemModel.amount.toString(),
             style: AppStyles.styleSemiBold24(context)

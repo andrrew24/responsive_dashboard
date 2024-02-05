@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import 'package:gap/gap.dart';
 import 'package:responsive_dashboard/views/widgets/allexepensesheader.dart';
 import 'package:responsive_dashboard/views/widgets/allexpenses_row.dart';
@@ -11,7 +12,7 @@ class AllExpensesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 2.5),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(12)),
       child: const Column(
@@ -19,9 +20,7 @@ class AllExpensesWidget extends StatelessWidget {
           AllExpensesHeader(
             title: "All Expenses",
           ),
-          Gap(16),
           AllExpensesRow(),
-          Gap(24),
         ],
       ),
     );
