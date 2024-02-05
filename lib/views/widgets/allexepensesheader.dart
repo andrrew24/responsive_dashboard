@@ -3,14 +3,16 @@ import 'package:gap/gap.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
 
 class AllExpensesHeader extends StatelessWidget {
-  const AllExpensesHeader({super.key});
+  const AllExpensesHeader({super.key, required this.title});
+
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Text(
-          "All Expenses",
+          title,
           style: AppStyles.styleSemiBold20(context),
         ),
         const Spacer(),

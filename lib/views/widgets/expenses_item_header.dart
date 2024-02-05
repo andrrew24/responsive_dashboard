@@ -19,7 +19,7 @@ class ExpensesItemHeader extends StatelessWidget {
       children: [
         Container(
           decoration: ShapeDecoration(
-            color: backgrounImage ?? const Color.fromARGB(255, 245, 242, 242),
+            color: backgrounImage ?? Colors.grey.shade100,
             shape: const OvalBorder(),
           ),
           child: SvgPicture.asset(

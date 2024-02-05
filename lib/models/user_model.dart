@@ -21,3 +21,22 @@ List<UserModel> usersList = [
       title: "Madrani Andi",
       subTitle: "Madraniadi20@gmail"),
 ];
+
+List<UserModel> latestTranscList = [
+  UserModel(
+      iconName: Assets.imagesAvatar1,
+      title: "Madrani Andi",
+      subTitle: "Madraniadi20@gmail"),
+  UserModel(
+      iconName: Assets.imagesAvatar1,
+      title: "Madrani Andi",
+      subTitle: "Madraniadi20@gmail"),
+  UserModel(
+      iconName: Assets.imagesAvatar1,
+      title: "Madrani Andi",
+      subTitle: "Madraniadi20@gmail"),
+  UserModel(
+      iconName: Assets.imagesAvatar1,
+      title: "Madrani Andi",
+      subTitle: "Madraniadi20@gmail"),
+];

@@ -10,23 +10,22 @@ class DesktopLayout extends StatelessWidget {
     return SizedBox(
         height: MediaQuery.sizeOf(context).height,
         width: MediaQuery.sizeOf(context).width,
-        // ignore: prefer_const_constructors
         child: Row(
-          children: const [
-            Expanded(
+          children: [
+            const Expanded(
               flex: 3,
               child: CustomDrawer(),
             ),
-            Expanded(
+            const Expanded(
               flex: 5,
               child: DesktopMidSection(),
             ),
-            // Expanded(
-            //   flex: 4,
-            //   child: Container(
-            //     decoration: const BoxDecoration(color: Colors.red),
-            //   ),
-            // ),
+            Expanded(
+              flex: 3,
+              child: Container(
+                decoration: const BoxDecoration(color: Colors.red),
+              ),
+            ),
           ],
         ));
   }
