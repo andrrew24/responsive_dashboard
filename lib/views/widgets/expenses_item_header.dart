@@ -5,25 +5,39 @@ class ExpensesItemHeader extends StatelessWidget {
   const ExpensesItemHeader({
     super.key,
     required this.assetName,
+    this.iconColor,
+    this.imageColor,
+    this.backgrounImage,
   });
 
   final String assetName;
+  final Color? iconColor, imageColor, backgrounImage;
 
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Container(
-          decoration: const ShapeDecoration(
-            color: Color(0xFFFAFAFA),
-            shape: OvalBorder(),
+          decoration: ShapeDecoration(
+            color: backgrounImage ?? const Color.fromARGB(255, 245, 242, 242),
+            shape: const OvalBorder(),
           ),
-          child: SvgPicture.asset(assetName),
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: SvgPicture.asset(
+              assetName,
+              colorFilter: ColorFilter.mode(
+                  imageColor ?? const Color(0xff4eb7f2), BlendMode.srcIn),
+            ),
+          ),
         ),
         const Spacer(),
         Transform.rotate(
             angle: 3.14159265,
-            child: const Icon(Icons.arrow_back_ios_new_rounded))
+            child: Icon(
+              Icons.arrow_back_ios_new_rounded,
+              color: iconColor ?? Colors.black,
+            ))
       ],
     );
   }

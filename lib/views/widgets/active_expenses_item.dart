@@ -24,6 +24,9 @@ class ActiveEpensesItem extends StatelessWidget {
         children: [
           ExpensesItemHeader(
             assetName: expensesItemModel.assetName,
+            backgrounImage: Colors.white.withOpacity(0.1000000149011612),
+            imageColor: Colors.white,
+            iconColor: Colors.white,
           ),
           const Gap(34),
           Text(
