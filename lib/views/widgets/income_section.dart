@@ -12,9 +12,9 @@ class IncomeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       decoration: ShapeDecoration(
-          color: Colors.amber,
+          color: Colors.white,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
       child: const Column(

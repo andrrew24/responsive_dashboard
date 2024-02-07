@@ -25,7 +25,7 @@ class MyCardAndTransactionHistorySection extends StatelessWidget {
             "My card",
             style: AppStyles.styleSemiBold20(context),
           ),
-          const Gap(20),
+          const Gap(5),
           const MyCardSection(),
           const Divider(
             height: 20,
