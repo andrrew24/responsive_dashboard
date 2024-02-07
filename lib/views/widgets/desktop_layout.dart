@@ -14,15 +14,15 @@ class DesktopLayout extends StatelessWidget {
         child: const Row(
           children: [
             Expanded(
-              flex: 1,
+              flex: 2,
               child: CustomDrawer(),
             ),
             Expanded(
-              flex: 2,
+              flex: 4,
               child: DesktopMidSection(),
             ),
             Expanded(
-              flex: 1,
+              flex: 3,
               child: DesktopTrailSection(),
             ),
           ],

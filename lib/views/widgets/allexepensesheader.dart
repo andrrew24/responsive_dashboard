@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
 
-class AllExpensesHeader extends StatelessWidget {
-  const AllExpensesHeader({super.key, required this.title});
+class CustomHeader extends StatelessWidget {
+  const CustomHeader({super.key, required this.title});
 
   final String title;
 

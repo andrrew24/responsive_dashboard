@@ -17,7 +17,7 @@ class AllExpensesWidget extends StatelessWidget {
           color: Colors.white, borderRadius: BorderRadius.circular(12)),
       child: const Column(
         children: [
-          AllExpensesHeader(
+          CustomHeader(
             title: "All Expenses",
           ),
           Gap(5),
