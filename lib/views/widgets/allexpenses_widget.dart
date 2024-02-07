@@ -20,7 +20,9 @@ class AllExpensesWidget extends StatelessWidget {
           AllExpensesHeader(
             title: "All Expenses",
           ),
+          Gap(5),
           AllExpensesRow(),
+          Gap(5)
         ],
       ),
     );
