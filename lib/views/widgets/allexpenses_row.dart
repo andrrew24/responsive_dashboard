@@ -33,7 +33,7 @@ class _AllExpensesRowState extends State<AllExpensesRow> {
               changeIndex(index);
             },
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
+              padding: const EdgeInsets.symmetric(horizontal: 0),
               child: AllExpenseItem(
                 expensesItemModel: item,
                 isSelected: activeIndex == index,

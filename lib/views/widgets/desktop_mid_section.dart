@@ -11,7 +11,6 @@ class DesktopMidSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 10, right: 24, left: 32, bottom: 10),
       decoration: const BoxDecoration(color: Color(0xfff7f9fa)),
       child: const Column(
         children: [
