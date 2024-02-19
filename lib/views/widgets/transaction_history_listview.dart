@@ -10,7 +10,12 @@ class TransactionHistoryListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: transactionHistoryList.map((e) => TransactionItem()).toList(),
+      children: transactionHistoryList
+          .map((e) => const Padding(
+                padding: EdgeInsets.only(bottom: 8.0),
+                child: TransactionItem(),
+              ))
+          .toList(),
     );
   }
 }

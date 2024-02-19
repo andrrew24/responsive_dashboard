@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_dashboard/views/widgets/allexepensesheader.dart';
-import 'package:responsive_dashboard/views/widgets/chart_details.dart';
-import 'package:responsive_dashboard/views/widgets/income_chart.dart';
+import 'package:responsive_dashboard/views/widgets/income_section_body.dart';
 
 class IncomeSection extends StatelessWidget {
   const IncomeSection({
@@ -21,12 +20,7 @@ class IncomeSection extends StatelessWidget {
         children: [
           CustomHeader(title: "Income"),
           Gap(5),
-          Row(
-            children: [
-              Expanded(child: IncomeChart()),
-              Expanded(flex: 2, child: ChartDetails())
-            ],
-          ),
+          IncomeSectionBody(),
         ],
       ),
     );
