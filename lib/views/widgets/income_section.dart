@@ -12,7 +12,7 @@ class IncomeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
       decoration: ShapeDecoration(
           color: Colors.white,
           shape:
@@ -24,7 +24,7 @@ class IncomeSection extends StatelessWidget {
           Row(
             children: [
               Expanded(child: IncomeChart()),
-              Expanded(child: ChartDetails())
+              Expanded(flex: 2, child: ChartDetails())
             ],
           ),
         ],

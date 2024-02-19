@@ -12,6 +12,7 @@ class AllExpensesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.all(5),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(12)),
       child: const Column(
@@ -21,7 +22,6 @@ class AllExpensesWidget extends StatelessWidget {
           ),
           Gap(5),
           AllExpensesRow(),
-          Gap(5)
         ],
       ),
     );
