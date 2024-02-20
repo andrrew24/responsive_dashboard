@@ -14,7 +14,11 @@ class IncomeSectionBody extends StatelessWidget {
     double width = MediaQuery.sizeOf(context).width;
 
     if (width >= SizeConfig.desktop && width < 1750) {
-      return Expanded(child: DetailedIncomeChart());
+      return Expanded(
+          child: Padding(
+        padding: const EdgeInsets.all(50),
+        child: DetailedIncomeChart(),
+      ));
     } else {
       return Row(
         children: [
