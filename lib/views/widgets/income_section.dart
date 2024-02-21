@@ -16,12 +16,14 @@ class IncomeSection extends StatelessWidget {
           color: Colors.white,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
-      child: const Column(
-        children: [
-          CustomHeader(title: "Income"),
-          Gap(5),
-          IncomeSectionBody(),
-        ],
+      child: Expanded(
+        child: const Column(
+          children: [
+            CustomHeader(title: "Income"),
+            Gap(5),
+            IncomeSectionBody(),
+          ],
+        ),
       ),
     );
   }

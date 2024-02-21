@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/views/widgets/adaptive_layout.dart';
 import 'package:responsive_dashboard/views/widgets/custom_drawer.dart';
@@ -17,6 +19,8 @@ class _DashboardViewState extends State<DashboardView> {
 
   @override
   Widget build(BuildContext context) {
+    log(MediaQuery.sizeOf(context).width.toString());
+
     return Scaffold(
       key: drawerKey,
       appBar: MediaQuery.sizeOf(context).width < 800
