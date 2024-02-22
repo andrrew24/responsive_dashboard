@@ -10,12 +10,15 @@ class DesktopTrailSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        MyCardAndTransactionHistorySection(),
-        Gap(10),
-        Expanded(child: IncomeSection())
-      ],
+    return const Padding(
+      padding: EdgeInsets.only(right: 32.0),
+      child: Column(
+        children: [
+          MyCardAndTransactionHistorySection(),
+          Gap(24),
+          Expanded(child: IncomeSection())
+        ],
+      ),
     );
   }
 }

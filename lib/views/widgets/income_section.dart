@@ -11,13 +11,13 @@ class IncomeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
       decoration: ShapeDecoration(
           color: Colors.white,
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
-      child: Expanded(
-        child: const Column(
+      child: const Expanded(
+        child: Column(
           children: [
             CustomHeader(title: "Income"),
             Gap(5),

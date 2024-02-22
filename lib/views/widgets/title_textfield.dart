@@ -20,7 +20,7 @@ class TitleTextFieldWidget extends StatelessWidget {
           labelText,
           style: AppStyles.styleMedium16(context),
         ),
-        const Gap(5),
+        const Gap(12),
         TextField(
           decoration: InputDecoration(
               contentPadding: const EdgeInsets.all(20),

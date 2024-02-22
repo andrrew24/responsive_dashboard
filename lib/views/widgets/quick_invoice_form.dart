@@ -26,7 +26,7 @@ class QuickInvoiceForm extends StatelessWidget {
             ),
           ],
         ),
-        const Gap(10),
+        const Gap(24),
         Row(
           children: [
             const Expanded(
@@ -42,7 +42,7 @@ class QuickInvoiceForm extends StatelessWidget {
                   "Item mount",
                   style: AppStyles.styleMedium16(context),
                 ),
-                const Gap(5),
+                const Gap(12),
                 Container(
                   padding: const EdgeInsets.only(left: 20, top: 18, bottom: 18),
                   decoration: ShapeDecoration(
@@ -71,7 +71,7 @@ class QuickInvoiceForm extends StatelessWidget {
             ))
           ],
         ),
-        const Gap(15),
+        const Gap(24),
         const Row(
           children: [
             Expanded(

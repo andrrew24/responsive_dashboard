@@ -32,7 +32,7 @@ class _MyCardSectionState extends State<MyCardSection> {
         MyCardPageView(
           pageController: pageController,
         ),
-        const Gap(18),
+        const Gap(19),
         DotsIndicator(currentIndex: currentIndex)
       ],
     );

@@ -32,22 +32,31 @@ class ActiveEpensesItem extends StatelessWidget {
             iconColor: Colors.white,
           ),
           const Gap(15),
-          Text(
-            expensesItemModel.title,
-            style:
-                AppStyles.styleMedium16(context).copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              expensesItemModel.title,
+              style: AppStyles.styleMedium16(context)
+                  .copyWith(color: Colors.white),
+            ),
           ),
           const Gap(8),
-          Text(
-            expensesItemModel.subtitle,
-            style:
-                AppStyles.styleRegular14(context).copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              expensesItemModel.subtitle,
+              style: AppStyles.styleRegular14(context)
+                  .copyWith(color: Colors.white),
+            ),
           ),
           const Gap(8),
-          Text(
-            expensesItemModel.amount.toString(),
-            style: AppStyles.styleSemiBold24(context)
-                .copyWith(color: Colors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              expensesItemModel.amount.toString(),
+              style: AppStyles.styleSemiBold24(context)
+                  .copyWith(color: Colors.white),
+            ),
           ),
         ],
       ),

@@ -17,15 +17,25 @@ class ExpensesItemHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
-          decoration: ShapeDecoration(
-            color: backgrounImage ?? Colors.grey.shade100,
-            shape: const OvalBorder(),
-          ),
-          child: SvgPicture.asset(
-            assetName,
-            colorFilter: ColorFilter.mode(
-                imageColor ?? const Color(0xff4eb7f2), BlendMode.srcIn),
+        Flexible(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Container(
+                decoration: ShapeDecoration(
+                  color: backgrounImage ?? Colors.grey.shade100,
+                  shape: const OvalBorder(),
+                ),
+                child: Center(
+                  child: SvgPicture.asset(
+                    assetName,
+                    colorFilter: ColorFilter.mode(
+                        imageColor ?? const Color(0xff4eb7f2), BlendMode.srcIn),
+                  ),
+                ),
+              ),
+            ),
           ),
         ),
         const Spacer(),

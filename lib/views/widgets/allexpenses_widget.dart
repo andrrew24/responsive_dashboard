@@ -12,7 +12,7 @@ class AllExpensesWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(5),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
           color: Colors.white, borderRadius: BorderRadius.circular(12)),
       child: const Column(
@@ -20,7 +20,7 @@ class AllExpensesWidget extends StatelessWidget {
           CustomHeader(
             title: "All Expenses",
           ),
-          Gap(5),
+          Gap(16),
           AllExpensesRow(),
         ],
       ),

@@ -10,15 +10,12 @@ class DesktopMidSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(color: Color(0xfff7f9fa)),
-      child: const Column(
-        children: [
-          AllExpensesWidget(),
-          Gap(10),
-          QuickInvoiceWidget(),
-        ],
-      ),
+    return const Column(
+      children: [
+        AllExpensesWidget(),
+        Gap(24),
+        QuickInvoiceWidget(),
+      ],
     );
   }
 }

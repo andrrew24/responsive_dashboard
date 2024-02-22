@@ -28,19 +28,28 @@ class InActiveEpensesItem extends StatelessWidget {
             assetName: expensesItemModel.assetName,
           ),
           const Gap(15),
-          Text(
-            expensesItemModel.title,
-            style: AppStyles.styleMedium16(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              expensesItemModel.title,
+              style: AppStyles.styleMedium16(context),
+            ),
           ),
           const Gap(8),
-          Text(
-            expensesItemModel.subtitle,
-            style: AppStyles.styleRegular14(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              expensesItemModel.subtitle,
+              style: AppStyles.styleRegular14(context),
+            ),
           ),
           const Gap(8),
-          Text(
-            expensesItemModel.amount.toString(),
-            style: AppStyles.styleSemiBold24(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              expensesItemModel.amount.toString(),
+              style: AppStyles.styleSemiBold24(context),
+            ),
           ),
         ],
       ),

@@ -18,7 +18,7 @@ class LatestTransactionSection extends StatelessWidget {
           "Latest Transaction",
           style: AppStyles.styleMedium16(context),
         ),
-        const Gap(5),
+        const Gap(12),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(

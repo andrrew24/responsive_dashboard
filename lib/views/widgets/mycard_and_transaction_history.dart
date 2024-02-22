@@ -13,7 +13,7 @@ class MyCardAndTransactionHistorySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
+      padding: const EdgeInsets.all(24),
       decoration: ShapeDecoration(
           color: Colors.white,
           shape:
@@ -25,14 +25,19 @@ class MyCardAndTransactionHistorySection extends StatelessWidget {
             "My card",
             style: AppStyles.styleSemiBold20(context),
           ),
-          const Gap(5),
+          const Gap(20),
           const MyCardSection(),
           const Divider(
             height: 20,
             thickness: .5,
           ),
           const TransactionHistoryHeader(),
-          const Gap(5),
+          const Gap(20),
+          Text(
+            "13 April 2022",
+            style: AppStyles.styleMedium16(context),
+          ),
+          const Gap(16),
           const TransactionHistoryListView(),
         ],
       ),
